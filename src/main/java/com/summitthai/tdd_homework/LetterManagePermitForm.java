@@ -9,6 +9,14 @@ public class LetterManagePermitForm {
     private String userId;
     private String boxId;
     private String regInd;
+    
+    private HrstDepartment department;
+    private String o;
+    private HrstPerson hrstPerson;
+    private EdcsLetterBox edcsLetterBox;
+    private EdcsOpenLetterBox edcsOpenLetterBox;
+    private String y;
+    private String deptName;
 
     public LetterManagePermitForm(String userId, String boxId, String regInd) {
 
@@ -18,6 +26,13 @@ public class LetterManagePermitForm {
     }
 
     public LetterManagePermitForm(HrstDepartment department, String o, HrstPerson hrstPerson, EdcsLetterBox edcsLetterBox, EdcsOpenLetterBox edcsOpenLetterBox, String y, String deptName) {
+    	this.department = department;
+    	this.o = o;
+    	this.hrstPerson = hrstPerson;
+    	this.edcsLetterBox = edcsLetterBox;
+    	this.edcsOpenLetterBox = edcsOpenLetterBox;
+    	this.y = y;
+    	this.deptName = deptName;
     }
 
     public String getUserId() {
@@ -46,5 +61,9 @@ public class LetterManagePermitForm {
 
     public LetterManagePermitForm getEdcsLetterBox() {
         return null;
+    }
+    
+    public String getY() {
+    	return this.y;
     }
 }

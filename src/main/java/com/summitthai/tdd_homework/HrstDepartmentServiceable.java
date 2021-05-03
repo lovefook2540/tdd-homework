@@ -4,16 +4,12 @@ import java.util.List;
 
 import com.summitthai.tdd_homework.model.HrstDepartment;
 
-public class HrstDepartmentServiceable {
-    public HrstDepartment getByPk(Long deptCode) {
-        return null;
-    }
+public interface HrstDepartmentServiceable {
 
-    public List<HrstDepartment> searchDeptCode(String deptCodeAction) {
-        return null;
-    }
+	public HrstDepartment getByPk(Long deptCode);
 
-    public List<Object[]> findForManageBox(String deptCode) {
-        return null;
-    }
+	public List<HrstDepartment> searchDeptCode(String deptCodeAction);
+
+	public List<Object[]> findForManageBox(String deptCode);
+
 }

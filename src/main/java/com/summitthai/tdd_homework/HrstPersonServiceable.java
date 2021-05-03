@@ -5,8 +5,8 @@ import java.util.List;
 
 import com.summitthai.tdd_homework.model.HrstPerson;
 
-public class HrstPersonServiceable {
-    public List<HrstPerson> getPersonsByWorkDepartment(BigDecimal bigDecimal) {
-        return null;
-    }
+public interface HrstPersonServiceable {
+
+	public List<HrstPerson> getPersonsByWorkDepartment(BigDecimal bigDecimal);
+
 }

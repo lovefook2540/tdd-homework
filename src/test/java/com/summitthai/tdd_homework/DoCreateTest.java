@@ -32,7 +32,7 @@ public class DoCreateTest {
         // Arrange
         when(db.getEdcsOpenLetterBoxDao()).thenReturn(edcsOpenLetterBoxDao);
         ManageLetterPermitService service = new ManageLetterPermitService(db);
-        List<LetterManagePermitForm> saves = new ArrayList();
+        List<LetterManagePermitForm> saves = new ArrayList<>();
 
         String userId = null;
         String boxId = null;
